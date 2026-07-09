@@ -35,11 +35,11 @@ league_choice = input(f"Hi! Which league would you like to analyse?\nPlease pick
 # FOOTBALL_DF = pd.read_csv(f"C:\\Users\\kinso\\Documents\\SUTD\\Term 5\\Football Data\\{season_default}_{league_choice}_possession.csv")
 # print(FOOTBALL_DF)
 
-FOOTBALL_DF = pd.read_csv(f"C:\\Users\\kinso\\Documents\\SUTD\\Term 5\\Football Data\\{season_default}_{league_choice_dict[league_choice]}_passing_types.csv")
+FOOTBALL_DF = pd.read_csv(f"<FILE PATH_NAME>\\{season_default}_{league_choice_dict[league_choice]}_passing_types.csv")
 collated_cols_list = [FOOTBALL_DF["Rk"], FOOTBALL_DF["Player"], FOOTBALL_DF["Pos"]]
 
 for stat in stat_dict.keys():
-    FOOTBALL_DF = pd.read_csv(f"C:\\Users\\kinso\\Documents\\SUTD\\Term 5\\Football Data\\{season_default}_{league_choice_dict[league_choice]}_{stat}.csv")
+    FOOTBALL_DF = pd.read_csv(f"<FILE_PATH_NAME>\\{season_default}_{league_choice_dict[league_choice]}_{stat}.csv")
     if stat == "passing_types":
         pass
     elif stat == "passing":
