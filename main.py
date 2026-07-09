@@ -48,7 +48,7 @@ for stat in stat_dict.keys():
         rows = data_table.find_elements(By.TAG_NAME, "tr")
         print(rows, len(rows))
         # input()
-        with open(f"C:\\Users\\kinso\\Documents\\SUTD\\Term 5\\Football Data\\{season}_{league}_{stat}.csv", mode="w", encoding="utf-8", newline="") as f:
+        with open(f"<PATH_TO_INPUT_FILE>{season}_{league}_{stat}.csv", mode="w", encoding="utf-8", newline="") as f:
             writer=csv.writer(f)
             row_list = []
             print(len(rows))
